@@ -15,6 +15,7 @@ pipeline {
     stage('Test') {
       steps {
         echo 'Wellcome test'
+        sh 'docker run -itd -p 80:80 --rm app'
       }
     }
     stage('Despliegue') {
