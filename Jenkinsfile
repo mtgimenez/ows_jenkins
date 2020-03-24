@@ -1,7 +1,7 @@
 pipeline {
   agent any
   stages {
-    stage('Trunk') {
+    stage('Inicio') {
       agent any
       steps {
         echo 'Wellcome'
