@@ -17,7 +17,7 @@ pipeline {
         echo 'Wellcome test'
         sh '''
         docker stop web
-        docer rm web
+        docker rm web
         docker run -itd -p 80:80 --name web --rm app'
         '''
       }
